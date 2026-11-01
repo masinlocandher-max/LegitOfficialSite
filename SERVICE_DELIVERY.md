@@ -8,11 +8,11 @@ Start with the smallest useful public presence. Personal, Professional, Business
 
 ## Source of truth
 
-- Public product data and recommendation rules: `Senz/components/legit-official-site.json` and `legit-site-model.js`.
-- Both repositories' `function.json` identify this managed service separately from the existing 13 software subscriptions.
+- Commercial approval, public pricing and offer copy: `Senz/commercial/catalog.json`. Product-specific questionnaire presentation: `Senz/components/legit-official-site.json`; it has no independent commercial status or prices.
+- Technical capabilities and production evidence: `Senzapp/src/catalog.js`; shared projections are generated and validated, never independently edited.
 - The eligible management engine retains the `business-website` entitlement identifier to preserve purchased licenses. Its editor supports personal, professional, business and company presentation, approved contrast-safe themes, typography, layout, section priorities, section titles, photos, content and calls to action.
 - This engine remains a one-page website. It does not implement custom-domain routing, ordering, online payments, arbitrary page creation or a blog. Multi-page/custom projects and integrations need an agreed delivery scope; do not sell an unimplemented self-service capability.
-- The shared app release gate remains false. Production readiness, payment/agreement verification and any organization seats are still required. New marketing does not activate software.
+- The shared app release gate remains false. Production readiness, payment/agreement verification and any organization seats are still required. New marketing does not activate software. A private authenticated preview is available before publication; it does not send inquiries. Edits to published content are immediate, so unpublish first for private revisions. No staged revision/approval queue exists.
 
 ## Delivery stages and evidence
 

@@ -8,7 +8,7 @@ test('both acquisition hosts permanently redirect all campaign paths to the prod
  }
 });
 test('only bounded campaign tags survive; visitor secrets and redirect targets never transfer',()=>{
- const url=destination('https://legitofficialsite.com/?utm_source=instagram&utm_campaign=own+your+space&email=private@example.com&token=secret&url=https://evil.test');
+ const url=destination('https://legitofficialsite.com/?utm_source=instagram&utm_campaign=own+your+space&email=private@example.com&token=secret&url=https://evil.test', {utm_source:['instagram'],utm_campaign:['own your space']});
  assert.equal(url,TARGET+'?utm_source=instagram&utm_campaign=own+your+space');
  assert.equal(destination('https://legitofficialsite.com/?utm_source='+('x'.repeat(201))),TARGET);
  assert.equal(destination('https://legitofficialsite.com/?utm_medium=%0d%0aLocation:evil'),TARGET);
