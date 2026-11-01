@@ -1,36 +1,47 @@
-# Legit Official Site
+# PURPOSE
 
-A Digital Solution by SENZ. Your website. Your identity. Your rules.
+This repository owns the acquisition domain redirect and related product/domain architecture.
 
-This repository owns the campaign-domain redirect and service delivery specification. It deliberately contains no duplicate public landing page and no private customer application code.
+SENZ sells it. SENZ App delivers it. Legit Official Site brings the right customer to it.
 
-| Responsibility | Canonical location |
+FMB&CO → SENZ Strategic Communications & Digital Solutions → SENZ products and services. Legit Official Site is a digital solution by SENZ, not a separate company.
+
+## WHAT THIS REPOSITORY OWNS
+
+Exact-host acquisition routing, approved campaign parameter rules, domain boundaries and repeatable service delivery documentation.
+
+## WHAT THIS REPOSITORY DOES NOT OWN
+
+The canonical public product page belongs to Senz. Customer management belongs to Senzapp. No second landing page, company, authentication system, dashboard, checkout or marketing CMS.
+
+## CANONICAL DOMAIN
+
+legitofficialsite.com and www.legitofficialsite.com → https://www.senzpr.com/legit-official-site/. No wildcard redirect.
+
+## RELATED REPOSITORIES
+
+| Repository | Role |
 | --- | --- |
-| Product page, selection flow, public configuration and inquiries | `masinlocandher-max/Senz`, `/legit-official-site/` |
-| Eligible licensed owner tools | Private `masinlocandher-max/Senzapp` repository |
-| Acquisition domain | `legitofficialsite.com` and `www.legitofficialsite.com` |
-| Permanent redirect destination | `https://senzpr.com/legit-official-site` |
+| [Senz](https://github.com/masinlocandher-max/Senz) | Sell and explain |
+| [Senzapp](https://github.com/masinlocandher-max/Senzapp) (private) | Deliver and operate |
+| [LegitOfficialSite](https://github.com/masinlocandher-max/LegitOfficialSite) | Acquire and route |
 
-The SENZ site currently canonicalizes to `www.senzpr.com`; its existing host and directory redirects may follow the acquisition redirect. Preserve that infrastructure. The one indexed product page is `https://www.senzpr.com/legit-official-site/`.
+## SOURCE-OF-TRUTH RULES
 
-## Published product
+redirect.mjs and campaign-rules.mjs own routing. Senzapp proves capability; Senz decides whether and how it is offered. This repository does neither.
 
-The [SENZ product page](https://www.senzpr.com/legit-official-site/) is live. GitHub Pages published SENZ commit `4f423d28fd4554ae8d9fce073f5cd4bbf402d05c` successfully on 1 November 2026. A live browser verified the page, loaded assets, and professional-site questionnaire through to the prefilled inquiry form. [Release evidence](release-evidence.json) records checks and remaining boundaries.
+## DEPLOYMENT STATUS
 
-![Published product page](docs/live-product-page.png)
+Redirect behavior is verified locally. Live acquisition-host routing is not verified. No DNS, nameserver, MX, SPF, DKIM, DMARC, CAA or hosting setting was changed. See docs/operations/ECOSYSTEM_VERIFICATION.md.
 
-## Redirect behavior
+## Development and reference
 
-`redirect.mjs` is a dependency-free edge handler with a standard Fetch API interface. It returns HTTP 308 for GET/HEAD on the two exact acquisition hosts, directing every path to the product page. Bounded UTM campaign parameters are retained. Email addresses, tokens, arbitrary redirect targets and other query parameters are dropped. Customer subdomains are excluded. Other methods return 405 to avoid forwarding submitted data.
+Run `npm run check` and `npm test`. [Top-level inventory](docs/architecture/DIRECTORY_AUDIT.md) explains every retained, moved or archived item. [Verification](docs/operations/ECOSYSTEM_VERIFICATION.md) distinguishes source, local tests, CI and live evidence.
 
-Run `npm run check` and `npm test`. These checks do not configure DNS or prove a live deployment.
+LEGIT OFFICIAL SITE — A Digital Solution by SENZ.
 
-## Deployment status and boundary
+YOUR WEBSITE. YOUR SPACE. YOUR RULES.
 
-Implementation is ready for the existing DNS/edge provider. No provider was identified or authenticated for this newly acquired domain during this change. The redirect is **not verified live**. No DNS records, nameservers, email records, renewal settings or hosting accounts were changed.
+Customer control remains subject to laws, security, hosting policies, intellectual-property rights, SENZ terms and agreed technical limits.
 
-Before enabling it, inspect the actual DNS zone, registrar forwarding and certificate coverage. Export the existing records. Prefer a provider-native permanent redirect when it can express the same exact-host rule; otherwise attach this handler to these two hosts on the existing edge account. Do not redirect `*.legitofficialsite.com`: that would capture future customer websites. Do not move SENZ hosting or use GoDaddy.
-
-Validate HTTP and HTTPS for apex and www, direct and campaign paths, TLS coverage, final product content, and a sample UTM query. Check that existing MX, TXT, CAA, SPF, DKIM and DMARC records remain intact. Keep the previous edge rule as rollback evidence. DNS records alone cannot create an HTTP path redirect.
-
-Pricing and capability availability are controlled in the canonical SENZ configuration. This repository is not a checkout, subscription provider or separate company.
+Read [service delivery](SERVICE_DELIVERY.md), [domain architecture](docs/DOMAIN_ARCHITECTURE.md), [customer subdomains](docs/CUSTOMER_SUBDOMAINS.md), [deployment](docs/DEPLOYMENT.md), and [commercial boundaries](docs/COMMERCIAL_BOUNDARIES.md). Approved campaign values are empty until a campaign is authorized; unknown values and personal information are not forwarded.

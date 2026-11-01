@@ -4,6 +4,11 @@
   "private": true,
   "type": "module",
   "description": "Campaign-domain redirect for Legit Official Site, a Digital Solution by SENZ.",
-  "scripts": {"check": "node --check redirect.mjs", "test": "node --test redirect.test.mjs"},
-  "engines": {"node": ">=22"}
+  "scripts": {
+    "check": "node --check redirect.mjs",
+    "test": "node --test redirect.test.mjs test/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
 }
