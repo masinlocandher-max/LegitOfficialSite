@@ -13,6 +13,12 @@ This repository owns the campaign-domain redirect and service delivery specifica
 
 The SENZ site currently canonicalizes to `www.senzpr.com`; its existing host and directory redirects may follow the acquisition redirect. Preserve that infrastructure. The one indexed product page is `https://www.senzpr.com/legit-official-site/`.
 
+## Published product
+
+The [SENZ product page](https://www.senzpr.com/legit-official-site/) is live. GitHub Pages published SENZ commit `4f423d28fd4554ae8d9fce073f5cd4bbf402d05c` successfully on 1 November 2026. A live browser verified the page, loaded assets, and professional-site questionnaire through to the prefilled inquiry form. [Release evidence](release-evidence.json) records checks and remaining boundaries.
+
+![Published product page](docs/live-product-page.png)
+
 ## Redirect behavior
 
 `redirect.mjs` is a dependency-free edge handler with a standard Fetch API interface. It returns HTTP 308 for GET/HEAD on the two exact acquisition hosts, directing every path to the product page. Bounded UTM campaign parameters are retained. Email addresses, tokens, arbitrary redirect targets and other query parameters are dropped. Customer subdomains are excluded. Other methods return 405 to avoid forwarding submitted data.

@@ -1,0 +1,46 @@
+{
+  "verifiedAt": "2026-11-01",
+  "publicUrl": "https://www.senzpr.com/legit-official-site/",
+  "website": {
+    "repository": "masinlocandher-max/Senz",
+    "pullRequest": 42,
+    "commit": "4f423d28fd4554ae8d9fce073f5cd4bbf402d05c",
+    "testedHead": "3833222b659dabcc8c501c4f14c39ee579cb4893",
+    "testedTreeMatchesMerged": true,
+    "successfulChecksRun": 41321947845,
+    "successfulPagesRun": 41322603156,
+    "unitTests": 43,
+    "browserPages": 42,
+    "questionnairePaths": 131,
+    "fiveProductPersonasPassed": true
+  },
+  "app": {
+    "repository": "masinlocandher-max/Senzapp",
+    "pullRequest": 17,
+    "commit": "1f7517cc87b99ffcf72bf2e4e2e44ead533fc6c7",
+    "testedHead": "8a71cd157a324e06f279644e1c6b6640f7a3d128",
+    "testedTreeMatchesMerged": true,
+    "successfulChecksRun": 41321359668,
+    "unitTests": 253,
+    "publicReleaseEnabled": false
+  },
+  "redirect": {
+    "unitTests": 3,
+    "successfulChecksRun": 41321106502,
+    "dnsChanged": false,
+    "liveVerified": false,
+    "blocker": "Access to the authoritative DNS/edge provider is required. No DNS provider was verified for these acquisition hosts."
+  },
+  "liveBrowserChecks": [
+    "apex product URL reaches canonical product page",
+    "headline and SENZ attribution",
+    "v3 stylesheet and original image loaded",
+    "professional audience and work/contact goals",
+    "existing custom domain preference",
+    "Professional site recommendation",
+    "quote brief prefilled; optional organization and budget"
+  ],
+  "emailDelivery": "Verified only with isolated providers. No real inquiry was sent; live email receipt is not verified.",
+  "analytics": "Non-personal event hooks only. No analytics collector was installed.",
+  "commercial": "Quote-led; no new prices or checkout; app release and entitlement gates retained."
+}
