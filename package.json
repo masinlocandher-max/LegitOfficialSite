@@ -1,0 +1,9 @@
+{
+  "name": "legit-official-site-acquisition",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Campaign-domain redirect for Legit Official Site, a Digital Solution by SENZ.",
+  "scripts": {"check": "node --check redirect.mjs", "test": "node --test redirect.test.mjs"},
+  "engines": {"node": ">=22"}
+}
