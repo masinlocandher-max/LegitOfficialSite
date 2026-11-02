@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Campaign-domain redirect for Legit Official Site, a Digital Solution by SENZ.",
+  "description": "Acquisition routing and editable client website template library for Legit Official Site by SENZ.",
   "scripts": {
-    "check": "node --check redirect.mjs",
-    "test": "node --test redirect.test.mjs test/*.test.mjs"
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test redirect.test.mjs test/*.test.mjs",
+    "test:browser": "node e2e/studio.cjs"
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
   }
 }
