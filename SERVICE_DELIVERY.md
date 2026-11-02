@@ -8,6 +8,8 @@ Start with the smallest useful public presence. Personal, Professional, Business
 
 ## Source of truth
 
+- Reusable visitor designs and the local template studio now live in this repository under `studio/`, following the owner's 2 November 2026 template instruction. See `docs/TEMPLATE_STUDIO.md`. The studio is not yet wired into Senzapp's authenticated storage/publishing engine; browser-local drafts and HTML previews do not activate or publish a customer website. The existing engine capabilities below remain separate until an integration is implemented and verified.
+
 - Commercial approval, public pricing and offer copy: `Senz/commercial/catalog.json`. Product-specific questionnaire presentation: `Senz/components/legit-official-site.json`; it has no independent commercial status or prices.
 - Technical capabilities and production evidence: `Senzapp/src/catalog.js`; shared projections are generated and validated, never independently edited.
 - The eligible management engine retains the `business-website` entitlement identifier to preserve purchased licenses. Its editor supports personal, professional, business and company presentation, approved contrast-safe themes, typography, layout, section priorities, section titles, photos, content and calls to action.

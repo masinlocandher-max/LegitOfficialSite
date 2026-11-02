@@ -1,5 +1,7 @@
 # Top-level responsibility audit — 2 November 2026
 
+Scope update after this initial audit: the owner explicitly requested editable client website templates in this repository. `studio/`, `scripts/`, `e2e/`, and the template regression tests now own that reusable surface. See [template studio responsibilities](../TEMPLATE_STUDIO.md). This audit below records the earlier redirect-only reorganization, not a prohibition on the newly requested template work.
+
 Audit covered tracked files, package scripts/imports, routes, API access checks, schema/migrations, tests, workflows, environment examples, CNAME/canonical tags and deployment references. Original source blobs were checked against upstream GitHub trees before editing. No useful customer tool or infrastructure was deleted. Git history retains original files; historical documents are not current operational instructions.
 
 | Item | Decision | Reason |
